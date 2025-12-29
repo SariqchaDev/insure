@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+}
+header{
+    padding: 30px;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+}
+nav ul li a{
+    color: grey;
+    text-decoration: none;
+}
+header button{
+    padding: 13px 25px;
+    background-color: white;
+}
+
+.menu{
+    font-size: 20px;
+    display: none;
+    border: none;
+}
+
+.hero{
+    background-color: #2D2641;
+    padding: 50px 0px;
+    height: 600px;
+}
+.hero .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+}
+
+
+.chiziq{
+    width: 150px;
+    border: 1px solid white;
+    margin-bottom: 63px;
+}
+
+.hero h1{
+font-weight: 400;
+font-size: 72px;
+line-height: 64px;
+letter-spacing: -1px;
+color: white;
+}
+
+.hero p{
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+letter-spacing: 0px;
+color: white; 
+margin: 16px 0 24px ;
+}
+
+.hero-text{
+    width: 540px;
+}
+
+.hero-btn{
+    padding: 12px 28px;
+    color: white;
+    background-color: inherit;
+    border: 2px solid white;
+}
+.card-ota{
+    margin-top: 300px;
+    gap:50px;
+    
+}
+
+.card{
+    width: 350px;
+    height: 250px;
+    margin-top: 70px;
+}
+
+.card p{
+    color: gray;
+    font-size: 16px;
+    margin: 10px 0 15px;
+}
+
+.card-ota .container{
+    display: flex;
+    padding: 20px;
+}
+
+.card-ota h1{
+    margin: 70px;
+    font-size: 52px;
+}
+.card-ota .chiziq{
+    border: 1px solid gray;
+    margin: 90px;
+}
+
+.ciki .container{
+    background-color: #2D2641;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.ciki{
+    color: white;
+}
+
+footer nav ul{
+    display: none;
+}
+
+
+footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:758px){
+    nav{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .hero .container{
+        flex-direction: column-reverse;
+    }
+    .hero{
+        height: auto;
+        padding: 0;
+    }
+    .hero img{
+        width: 100%;
+    }
+    .hero-text{
+        width: 90%;
+        text-align: center;
+    }
+    .hero h1{
+        font-size: 48px;
+    }
+    .chiziq{
+        display: none;
+    }
+     .card-ota .container{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content:center;
+     }
+     .ciki .container{
+        flex-direction: column;
+        text-align: center;
+     }
+}
